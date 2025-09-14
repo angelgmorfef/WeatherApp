@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
-const weather = document.querySelector('.weather-box');
+const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
@@ -36,23 +36,23 @@ search.addEventListener('click', () => {
 
             switch (json.weather[0].main) {
                 case 'Clear':
-                    image.src = 'images/clear.png';
+                    image.src = 'asset/img/clear.png';
                     break;
 
                 case 'Rain':
-                    image.src = 'images/rain.png';
+                    image.src = 'asset/img/rain.png';
                     break;
 
                 case 'Snow':
-                    image.src = 'images/snow.png';
+                    image.src = 'asset/img/snow.png';
                     break;
 
                 case 'Clouds':
-                    image.src = 'images/cloud.png';
+                    image.src = 'asset/img/cloud.png';
                     break;
 
                 case 'Haze':
-                    image.src = 'images/mist.png';
+                    image.src = 'asset/img/mist.png';
                     break;
 
                 default:
